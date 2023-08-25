@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demonstracao"> Clique no botao para mudar a cor desse paragrafo</p>
+    <button onclick="corVermelho()">Vermelho</button>
+    <button onclick="corAzul()">Azul</button>
+
+</body>
+<script>
+    function corVermelho() {
+        var x = document.getElementById("demonstracao")
+        x.style.color = "red"
+    }
+    function corAzul(){
+        var x = document.getElementById("demonstracao")
+        x.style.color = "blue"
+    }
+</script>
+</html>

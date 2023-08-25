@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+        <h4>Esse é o cabeçalho</h4>
+    </header>
+    <div>
+        Nome<br>
+        <input type="text" name="campo1" id="campo1"><br>
+
+        Data  de nascimento<br>
+        <input type="date" name="campo2" id="campo2"><br>
+
+        <p><button onclick="imprimir()"> Imprimir </button></p>
+        
+        Resultado<br>
+        <textarea name="resultado" id="resultado" cols="20" rows="5"></textarea>
+    </div>
+    <footer>
+        <h5>esse é o rodapé</h5>
+    </footer>
+    <script>
+        function imprimir(){
+            var nome = document.getElementsById("campo1")
+            var nascimento = document.getElementById("campo2")
+            var resultado = document.getElementById("resultado")
+
+            resultado.value = nome.value +
+                        " nasceu no dia " +
+                        nascimento.value
+        }
+    </script>
+</body>
+</html>
